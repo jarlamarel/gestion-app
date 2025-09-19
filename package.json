@@ -1,0 +1,21 @@
+{
+  "name": "zapa-association-app",
+  "version": "1.0.0",
+  "description": "Application de gestion associative culturelle et financière - Projet d'apprentissage interactif",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "setup": "echo 'Configuration du projet ZAPA...' && npm run install-all"
+  },
+  "keywords": ["association", "gestion", "react", "nodejs", "postgresql", "apprentissage"],
+  "author": "Zakaria - ZAPA Academy",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
+

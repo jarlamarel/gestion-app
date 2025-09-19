@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- 📱 Meta tags essentiels -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#3b82f6" />
+    
+    <!-- 📄 Informations de la page -->
+    <title>ZAPA - Gestion Associative Moderne</title>
+    <meta name="description" content="Application de gestion pour associations culturelles et financières. Gérez vos membres, événements et finances en toute simplicité." />
+    <meta name="keywords" content="association, gestion, membres, événements, finances, culturel" />
+    <meta name="author" content="Zakaria - ZAPA Academy" />
+    
+    <!-- 🎨 Favicon et icônes -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <!-- 📋 Manifest pour PWA -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- 🔤 Police Google Fonts (préchargement) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- 🎯 Open Graph pour réseaux sociaux -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ZAPA - Gestion Associative" />
+    <meta property="og:description" content="Application moderne pour la gestion d'associations" />
+    <meta property="og:url" content="https://zapa-app.vercel.app" />
+    
+    <!-- 🐦 Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ZAPA - Gestion Associative" />
+    <meta name="twitter:description" content="Application moderne pour la gestion d'associations" />
+  </head>
+  
+  <body>
+    <!-- ⚠️ Message pour navigateurs sans JavaScript -->
+    <noscript>
+      <div style="
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        background-color: #f3f4f6; 
+        font-family: Inter, sans-serif;
+        text-align: center;
+        padding: 20px;
+      ">
+        <div>
+          <h1 style="color: #1f2937; margin-bottom: 16px;">JavaScript requis</h1>
+          <p style="color: #6b7280; max-width: 400px;">
+            ZAPA nécessite JavaScript pour fonctionner. 
+            Veuillez activer JavaScript dans votre navigateur et recharger la page.
+          </p>
+          <p style="color: #9ca3af; font-size: 14px; margin-top: 16px;">
+            🎓 ZAPA Academy - Apprentissage du développement web moderne
+          </p>
+        </div>
+      </div>
+    </noscript>
+    
+    <!-- 🎯 Point d'ancrage de l'application React -->
+    <div id="root">
+      <!-- 📚 Pendant le chargement, on pourrait afficher un loader ici -->
+      <div style="
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        background-color: #f9fafb;
+      ">
+        <div style="text-align: center;">
+          <div style="
+            width: 40px; 
+            height: 40px; 
+            border: 3px solid #e5e7eb; 
+            border-top: 3px solid #3b82f6; 
+            border-radius: 50%; 
+            animation: spin 1s linear infinite; 
+            margin: 0 auto 16px;
+          "></div>
+          <p style="color: #6b7280; font-family: Inter, sans-serif;">
+            Chargement de ZAPA...
+          </p>
+        </div>
+      </div>
+      
+      <style>
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      </style>
+    </div>
+    
+    <!-- 📚 Commentaire pédagogique : 
+         React va remplacer tout le contenu de #root 
+         par notre application une fois chargée -->
+  </body>
+</html>
